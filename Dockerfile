@@ -7,6 +7,7 @@ RUN apt-get update -qq && \
 	bc \
 	bison \
 	ca-certificates \
+	curl \
 	flex \
 	gcc \
 	git \
