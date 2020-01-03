@@ -5,7 +5,9 @@ RUN apt-get update -qq && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
 	bc \
+	bison \
 	ca-certificates \
+	flex \
 	gcc \
 	git \
 	libc6-dev \
