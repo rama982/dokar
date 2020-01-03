@@ -5,13 +5,14 @@ RUN apt-get update -qq && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
 	bc \
-	make \
-	python \
+	ca-certificates \
 	gcc \
 	git \
-	wget \
 	libc6-dev \
-	ca-certificates \
+	libssl-dev \
+	make \
+	openssl \
+	python \
+	wget \
 	zip
-
 
