@@ -15,6 +15,7 @@ RUN apt-get update -qq && \
 	make \
 	openssl \
 	python \
+	ssh \
 	wget \
 	zip
 
