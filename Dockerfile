@@ -18,5 +18,6 @@ RUN apt-get update -qq && \
 	python \
 	ssh \
 	wget \
-	zip
+	zip \
+	zstd
 
