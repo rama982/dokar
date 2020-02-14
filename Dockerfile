@@ -1,23 +1,12 @@
-FROM ubuntu:focal
+FROM archlinux:latest
 LABEL maintainer "Rama Bondan Prakoso <ramanarubp@gmail.com>"
 
-RUN apt-get update -qq && \
-    apt-get upgrade -y && \
-    apt-get install --no-install-recommends -y \
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm \
+	base-devel \
 	bc \
-	bison \
-	ca-certificates \
-	curl \
-	flex \
-	gcc \
 	git \
-	libc6-dev \
-	libssl-dev \
-	make \
-	openssl \
 	python \
-	ssh \
+	openssh \
 	wget \
-	zip \
-	zstd
-
+	zip
