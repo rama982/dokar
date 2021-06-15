@@ -1,9 +1,6 @@
-FROM fedora:latest
+FROM ubuntu:latest
 LABEL maintainer "Rama Bondan Prakoso <ramanarubp@gmail.com>"
 
-RUN dnf install -y \
-    git-core libtool shtool which \
-    hostname ccache bc gnupg1 \
-    zip curl make m4 python \
-    diffutils openssl-devel && dnf clean all
-
+RUN apt update && apt install \
+    git nano zip bc make gcc curl python make \
+    && rm -rf /var/lib/apt/lists/*
